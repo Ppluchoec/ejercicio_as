@@ -297,6 +297,7 @@ Ingresar monto</documentation>
           </sourceConnection>
         </child>
       </child>
+      <property key="Diagrama" value="Contexto_C4.drawio"/>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Flujos de valor - Digital Channel Enrollment" id="id-1ed720a6aa3c48fc85012edce0a50574">
       <child xsi:type="archimate:Group" id="id-a8a8cbb1554042a0b117e0911f1a7f76" name="Digital Channel Enrollment" textAlignment="1" fillColor="#eaebff" borderType="1">
