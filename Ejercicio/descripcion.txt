@@ -1,0 +1,52 @@
+Descripción del ejercicio:
+
+Usted ha sido contratado por una entidad llamada BP como arquitecto de soluciones para diseñar un sistema de banca por internet. En este sistema los usuarios podrán acceder al histórico de sus movimientos, realizar transferencias y pagos entre cuentas propias e interbancarias.
+
+Toda la información referente al cliente se tomará de 2 sistemas:
+
+Una plataforma Core que contiene información básica de cliente, movimientos y productos.
+Un sistema independiente que complementa la información del cliente cuando los datos se requieren en detalle.
+
+Debido a que la norma exige que los usuarios sean notificados sobre los movimientos realizados, el sistema utilizará sistemas externos o propios de envío de notificaciones, mínimo 2.
+
+Este sistema contará con 2 aplicaciones en el Front:
+
+Una SPA.
+Una Aplicación móvil desarrollada en un framework multiplataforma.
+
+(Mencione 2 opciones y justifique el porqué de su elección).
+
+Ambas aplicaciones autenticarán a los usuarios mediante un servicio que usa el estándar OAuth 2.0, para el cual no requiere implementar toda la lógica, ya que la compañía cuenta con un producto que puede ser configurado para este fin; sin embargo, debe dar recomendaciones sobre cuál es el mejor flujo de autenticación que se debería usar según el estándar.
+
+Tenga en cuenta que el sistema de Onboarding para nuevos clientes en la aplicación móvil usa reconocimiento facial; por tanto, su arquitectura deberá considerarlo como parte del flujo de autorización y autenticación. A partir del Onboarding, el nuevo usuario podrá ingresar al sistema mediante usuario y clave, huella o algún otro método. Especifique alguno de los anteriores dentro de su arquitectura; también puede recomendar herramientas de industria que realicen estas tareas y robustezcan su aplicación.
+
+El sistema utiliza una base de datos de auditoría que registra todas las acciones del cliente y cuenta con un mecanismo de persistencia de información para clientes frecuentes. Para este caso, proponga una alternativa basada en patrones de diseño que relacione los componentes que deberían interactuar para conseguir el objetivo.
+
+Para obtener los datos del cliente, el sistema pasa por una capa de integración compuesta por un API Gateway y consume los servicios necesarios de acuerdo con el tipo de transacción. Inicialmente, usted cuenta con 3 servicios principales:
+
+Consulta de datos básicos.
+Consulta de movimientos.
+Transferencias.
+
+Estos servicios realizan llamadas a servicios externos dependiendo del tipo de operación. Si considera que debería agregar más servicios para mejorar el rendimiento de su arquitectura o incorporar más servicios para mejorar la respuesta de información a sus clientes, es libre de hacerlo.
+
+Consideraciones.
+
+Para este reto, mencione aquellos elementos normativos que considere importantes a tener en cuenta para entidades financieras. Ejemplo: ley de datos personales, seguridad, etc.
+
+Garantice en su arquitectura:
+
+Alta disponibilidad (HA).
+Tolerancia a fallos.
+Recuperación ante desastres (DR).
+Seguridad y monitoreo.
+Excelencia operativa y auto-healing.
+
+Si lo considera necesario, su arquitectura puede contener elementos de infraestructura en nube, Azure o AWS; garantice baja latencia, cuenta con presupuesto para esto.
+
+En lo posible, plantee una arquitectura desacoplada con elementos reutilizables y cohesionados para otros componentes que puedan adicionarse en el futuro.
+
+El modelo debe ser desarrollado bajo modelo C4 (Modelo de Contexto, Modelo de Aplicación o Contenedor y Componentes). Describa hasta el modelo de componentes; la infraestructura la puede modelar como usted lo considere, usando la herramienta de su preferencia.
+
+
+

@@ -1,0 +1,19 @@
+Criterios de calificación
+
+Se calificarán los siguientes elementos:
+
+Que la solución satisfaga los requerimientos y todo cuente con justificación.
+Calidad y profundidad de los diagramas (Contexto, Contenedores y Componentes).
+Segmentación de responsabilidades y desacoplamiento.
+Uso de patrones de arquitectura.
+Integración con servicios externos.
+Calidad de la arquitectura de aplicación front-end y móvil.
+Arquitectura de acceso a datos.
+Conocimientos de nube (AWS o Azure).
+Manejo de costos.
+Arquitectura de autenticación.
+Arquitectura de integración con Onboarding.
+Diseño de solución de auditoría.
+Conocimientos de regulaciones bancarias y estándares de seguridad.
+Implementación de alta disponibilidad y tolerancia a fallos.
+Implementación de monitoreo.
